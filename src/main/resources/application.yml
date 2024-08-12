@@ -5,8 +5,11 @@ spring:
     security:
         oauth2:
             resourceserver:
-                jwt:
-                    jwk-set-uri: ${JWK_URI}
+                opaquetoken:
+                    introspection-uri: ${INSTROSPECTION_URI}
+                    client-id: ${CLIENT_ID}
+                    client-secret: ${CLIENT_SECRET}
+
     cloud:
         gateway:
             routes:
@@ -16,4 +19,4 @@ spring:
                 - Path=/**
 
 server:
-        port: 8080
+        port: ${PORT:8080}
