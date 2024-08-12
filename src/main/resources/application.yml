@@ -6,7 +6,7 @@ spring:
         oauth2:
             resourceserver:
                 opaquetoken:
-                    introspection-uri: ${INSTROSPECTION_URI}
+                    introspection-uri: ${INTROSPECTION_URI}
                     client-id: ${CLIENT_ID}
                     client-secret: ${CLIENT_SECRET}
 
