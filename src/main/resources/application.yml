@@ -1,5 +1,4 @@
 spring:
-    
     application:
         name: gateway
     security:
@@ -13,7 +12,7 @@ spring:
     cloud:
         gateway:
             routes:
-            - id: pacs
+            - id: main
               uri: ${API_URI}
               predicates:
                 - Path=/**
