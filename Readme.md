@@ -39,7 +39,7 @@ server:
         port: ${PORT:8080}
 ```
 
-Adding routes to gateway property should solve handling multiple API. Then your configuration file must be mounted in the gatekeeper container to run a command for spring initialization with the custom configuration.
+Adding routes to the gateway property should resolve the handling of multiple APIs. Then, your configuration file must be mounted in the gatekeeper container to execute a command for Spring initialization with the custom configuration.
 
 ```yml
 name: "gatekeeper"
