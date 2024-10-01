@@ -1,8 +1,8 @@
 # Gatekeeper
 
-> Turn any api in a resource server based on OAUTH2 and OpenID Connect protocols.
+> Turn any api into a `resource server` based on OAUTH2 and OpenID Connect protocols.
 
-Very simple and straightforward configuration. You have two environment variables one for the API  that you want to turn into a resource server and other for the JWK( or well know) url of you  authorization server.
+Very simple and straightforward configuration. You have four environment variables, one for the API  that you want to turn into a resource server and other threes to setting the authorization server.
 
 - `INTROSPECTION_URI`: The url of the introspection endpoint
 - `CLIENT_ID`: The identifier of the gatekeeper client
